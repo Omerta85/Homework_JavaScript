@@ -74,5 +74,5 @@ console.log(!!inputData);
 let inputData1 = prompt(middleName);
 console.log(!!inputData1);
 let age = 36;
-let inputData2 = prompt(age);
+let inputData2 = +prompt(age);
 console.log(!!inputData2);
