@@ -69,10 +69,9 @@ console.log(typeof b1);
 let c1 = true;
 console.log(typeof c1);
 
-let inputData = prompt(firstName);
+let inputData = prompt("enter name");
 console.log(!!inputData);
-let inputData1 = prompt(middleName);
+let inputData1 = prompt("enter middleName");
 console.log(!!inputData1);
-let age = 36;
-let inputData2 = +prompt(age);
+let inputData2 = +prompt("enter age");
 console.log(!!inputData2);
