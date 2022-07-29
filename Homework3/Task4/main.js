@@ -24,4 +24,6 @@ switch (day) {
     case 7:
         document.write('Sunday');
         break;
+    default:
+    document.write("<h2>What do you want?</h2>");
 }

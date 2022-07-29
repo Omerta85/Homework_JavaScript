@@ -10,4 +10,6 @@ if (time >= 0 && time < 15) {
     console.log('III part of the day');
 } else if (time > 44 && time <= 59) {
     console.log('IV part of the day');
+}else {
+    document.write("<h2>Error</h2>");
 }
