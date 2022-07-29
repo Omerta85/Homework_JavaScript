@@ -1,5 +1,5 @@
 //Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
-let arrays = [1, 3.6, 'number', 'type of', 'name', 'true', 'false', '135', 280, 'age'];
+let arrays = [1, 3.6, 'number', 'type of', 'name', true, false, '135', 280, 'age'];
 console.log(arrays);
 console.log(arrays[0]);
 console.log(arrays[1]);
