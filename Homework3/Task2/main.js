@@ -3,13 +3,13 @@
 
 let time = 59;
 if (time >= 0 && time < 15) {
-    console.log('I part of the day');
+    document.write('I part of the day');
 } else if (time > 14 && time < 30) {
-    console.log('II part of the day');
+    document.write('II part of the day');
 } else if (time > 29 && time < 45){
-    console.log('III part of the day');
+    document.write('III part of the day');
 } else if (time > 44 && time <= 59) {
-    console.log('IV part of the day');
+    document.write('IV part of the day');
 }else {
     document.write("<h2>Error</h2>");
 }

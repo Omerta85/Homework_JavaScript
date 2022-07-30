@@ -3,13 +3,13 @@
 
 
 
-let day = 31;
+let day = +prompt(" what  is  number?")
 if (day > 0 && day < 11) {
-    console.log('I decade of the month');
+    document.write('I decade of the month');
 } else if (day > 10 && day < 20) {
-    console.log('II decade of the month');
+    document.write('II decade of the month');
 } else if (day > 19 && day < 32){
-    console.log('III decade of the month');
+    document.write('III decade of the month');
 }else {
     document.write("<h2>Error</h2>");
 }
