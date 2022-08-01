@@ -4,9 +4,9 @@
 
 let x = +prompt('Enter number');
 if ( x === 0 ) {
-    document.write('Вірно');
-} else {
     document.write('Невірно');
+} else {
+    document.write('Вірно');
 }
 
 
