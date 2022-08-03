@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: cornflowerblue;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1320px;
+    background:  greenyellow;
+    display: grid;
+    grid-template-columns:repeat(5, 250px);
+    grid-template-rows: repeat(20, 230px);
+    grid-gap: 10px;
+    padding: 10px 15px;
+}
+.post-card{
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.post-card p {
+    text-align: justify;
+}

@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.users-box{
+    margin: 0 auto;
+    width: 600px;
+    background: turquoise ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-block{
+    flex: 35%;;
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.address-block{
+    color: #2b9f85;
+    font-size: 20px;
+    margin-top: 10px;
+}
