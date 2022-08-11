@@ -221,13 +221,31 @@ let books = [
     {name: 'Some Boolsdfk', pages: 250, autors: ['somename', 'name', 'name'], ganre: 'aifusdgf'}
 ]
 // -знайти наібльшу книжку.
-let find = books.find(value => Math.min.apply(null, books.pages));
-console.log(find);
-
+let max = books[0];
+books.forEach(book =>{
+    if (book.pages > max.pages){
+        max = book;
+    }
+});
+console.log(max);
 // - знайти книжку/ки з найбільшою кількістю жанрів
+books.forEach(book => {
+    if (book.ganre > max.ganre){
+        max = book;
+    }
+})
+console.log(max);
 // - знайти книжку/ки з найдовшою назвою
+books.forEach(book => {
+    if (book.name.length > max.name.length){
+        max = book;
+    }
+});
+console.log(max);
 // - знайти книжку/ки які писали 2 автори
+console.log(books.filter(book => book.autors.length === 2));
 // - знайти книжку/ки які писав 1 автор
+console.log(books.filter(book => book.autors.length === 1));
 // - вісортувати книжки по кількості сторінок по зростанню
 let sort1 = books.sort((u1, u2) =>  u1.pages - u2.pages);
 console.log(sort1);
