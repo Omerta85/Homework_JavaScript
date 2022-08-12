@@ -23,5 +23,9 @@ console.log(users[6].password);
 console.log(users[7].password);
 console.log(users[8].password);
 console.log(users[9].password);
+for (let i = 0; i < users.length; i++) {
+    console.log(`${users[i].password}`);
+}
+
 
 
