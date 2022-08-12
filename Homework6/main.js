@@ -7,6 +7,7 @@ console.log(b.length);
 let c = 'javascript is cool';
 console.log(c.length);
 
+
 // - Перевести до великого регістру наступні стрінгові значення
 // 'hello world', 'lorem ipsum', 'javascript is cool'
 console.log(a.toUpperCase());
@@ -78,10 +79,9 @@ let coursesAndDurationArray = [
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}
 ];
-let sort = coursesAndDurationArray.sort((u1, u2) => {
+console.log(sort = coursesAndDurationArray.sort((u1, u2) => {
     return u1.monthDuration - u2.monthDuration;
-});
-console.log(sort);
+}));
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
 let filter = coursesAndDurationArray.filter( value => value.monthDuration > 5);
 console.log(filter);
