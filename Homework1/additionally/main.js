@@ -52,6 +52,6 @@ let n = 3;
 let m = 4;
 let k = (n **2 + m**2);
 console.log(Math.sqrt(k));
-let areaЕriangle = (r, h) => { let k = n **2 + m**2; return Math.sqrt(k);}
+let areaЕriangle = (r, h) => Math.sqrt(n **2 + m**2);
 console.log(areaЕriangle (10, 4));
 
