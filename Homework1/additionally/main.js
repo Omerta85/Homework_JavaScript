@@ -34,6 +34,8 @@ let height = 23;
 let width = 10;
 let s = height * width;
 console.log(s);
+let areaRectangle = (a, b) => a * b;
+console.log(areaRectangle (23, 10));
 
 // 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
 // результат помістіть у змінну v.
@@ -41,6 +43,8 @@ let heightC = 10;
 let dC = 4;
 let v = 3.14 * (dC / 2) **2 * heightC;
 console.log(v);
+let areaСylinder = (r, h) => 6.28 * r * (r + h);
+console.log(areaСylinder (10, 4));
 
 // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
 // Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
@@ -48,4 +52,6 @@ let n = 3;
 let m = 4;
 let k = (n **2 + m**2);
 console.log(Math.sqrt(k));
+let areaЕriangle = (r, h) => { let k = n **2 + m**2; return Math.sqrt(k);}
+console.log(areaЕriangle (10, 4));
 
