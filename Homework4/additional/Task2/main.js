@@ -24,11 +24,11 @@ array[5] = 25;
 console.log(array);
 
 // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
-let array = [2,17,13,6,22,31,45,66,100,-18];
+let array7 = [2,17,13,6,22,31,45,66,100,-18];
 // 1. перебрати його циклом while
 let i = 0;
-while (i < array.length){
-    console.log(array[i]);
+while (i < array7.length){
+    console.log(array7[i]);
     i++;
 }
 // 2. перебрати його циклом for
@@ -131,23 +131,17 @@ console.log(arrayBack);
 // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
 
 let array1 = [105, 104, 106, 107, 110, 112, 113, 154, 468, 123];
-for (let number1 of array1) {
-    console.log(number1);
-}
+for (let number1 of array1) {console.log(number1);}
 
 // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
 
 let array22 = ['Aaron','Badger','Ariadne','Charlotte','Daphne','Elias','Fannie','Gideon','Hank','Jocelyn'];
-for (let string of array22) {
-    console.log(string);
-}
+for (let string of array22) {console.log(string);}
 
 // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 
 let array2 = ['Vadym', 26, 'years', 'old', 'you', 'smoke', '?', false, 20, 22];
-for (let array2Element of array2) {
-    console.log(array2Element);
-}
+for (let array2Element of array2) {console.log(array2Element);}
 
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
 

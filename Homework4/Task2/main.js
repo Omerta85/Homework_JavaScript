@@ -20,3 +20,5 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 for ( const listOfItem of listOfItems) {
         document.write(`<li>${listOfItem}</li>`);
 }
+function arrays1(...a) {document.write(`<li>${a}</li>`);}
+arrays1('html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js');

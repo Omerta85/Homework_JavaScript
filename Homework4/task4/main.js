@@ -15,20 +15,23 @@ let users = [
     {name: 'max', age: 31, status: true}
 ];
 //     - користувачів зі статусом true
-// for (const user of users) {
-//     if (user.status) {
-//         console.log(user);
-//     }
-// }
+for (const user of users) {
+    if (user.status) {
+        console.log(user);
+    }
+}
+console.log(userTrue = users.filter(value => value.status === true));
 // - користувачів зі статусом false
-// for (const user of users) {
-//     if (!user.status) {
-//         console.log(user);
-//     }
-// }
+for (const user of users) {
+    if (!user.status) {
+        console.log(user);
+    }
+}
+console.log(userFalse = users.filter(value => value.status === false));
 // - користувачів які старші за 30 років
 for (const user of users) {
     if (user.age > 30) {
         console.log(user);
     }
 }
+console.log(userAge = users.filter(value => value.age > 30));
