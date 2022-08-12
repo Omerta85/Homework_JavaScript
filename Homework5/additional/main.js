@@ -43,10 +43,7 @@ let summArrElement = (arr) =>{
     console.log(result);
     return result;
 }
-
 summArrElement(array);
-//
-//
 //
 // - Дано натуральное число n. Выведите все числа от 1 до n.
 let showNum = (n) => {

@@ -1,31 +1,23 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-function areaRectangle(a, b) {
-    let resRectangle = a * b;
-    return resRectangle;
-}
+let areaRectangle = (a, b) => a * b;
 console.log(areaRectangle (5, 6));
 
+
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
-function areaCircles(r) {
-    let resCircles = 3.14 * r **2;
-    return resCircles;
-}
+let areaCircles = (r) => 3.14 * r **2;
 console.log(areaCircles (5));
+
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
-function areaСylinder(r, h) {
-    let resСylinder = 2 * 3.14 * r * (r + h);
-    return resСylinder;
-}
-console.log(areaСylinder (5, 4));
+let areaCylinder = (r, h) => 2 * 3.14 * r * (r + h);
+console.log(areaCylinder (5, 4));
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
-let array = ['vasya', 'petya', 'kolya', 'olya', 'max', 'anya', 'oleg', 'andrey', 'masha', 'olya', 'max'];
+let array = ['vasya', 'petya', 'kolya', 'olya', 'max', 'anya', 'oleg', 'andrey', 'masha', 'olya', 'max'], i;
 function arrayPrinter(array) {
     for (const item of array) {
         console.log(item);
     }
 }
-
 arrayPrinter(array);
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
@@ -46,10 +38,11 @@ unorderedList("list");
 
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-function listFor(li, c) {
+function listFor(li,c) {
     document.write(`<ul>`);
     for (i = 0; i < c; i++) {
-        const cElement = c[i];
+        let cElement;
+        cElement = c[i];
         document.write(`<li>${li}</li>`);
     }
     document.write(`</ul>`);
@@ -80,10 +73,11 @@ let users = [
     {id: 11, name: 'max', age: 31}
 ];
 
-function arrObjectBlock(a) {
-    for (let aElement of a) {
-        let a = aElement.id;
-        document.write(`<div>${aElement.id} ${aElement.name} ${aElement.age} </div> `)
+function arrObjectBlock(z) {
+    for (let zElement of z) {
+        let z;
+        z = zElement.id;
+        document.write(`<div>${zElement.id} ${zElement.name} ${zElement.age} </div> `)
     }
 }
 console.log(users);
