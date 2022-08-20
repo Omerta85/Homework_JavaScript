@@ -1,8 +1,8 @@
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
-function User(id, name, surname , email, phone) {
+function User(id, name, surName , email, phone) {
     this.id = id;
     this.name = name;
-    this.surname = surname;
+    this.surName = surName;
     this.email = email;
     this.phone = phone;
 }
@@ -101,14 +101,6 @@ class Car1 {
         this.engineVol = engineVol;
         this.drive = () => console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
         this.drive();
-        this.info = () => console.log(`
-        Модель - ${this.model},
-        Виробник - ${this.manufacturer},
-        Рік випуску - ${this.year},
-        Виробник - ${this.maxSpeed},
-        Обєм двигуна - ${this.engineVol},
-        Водій - ${this.driver}`);
-        this.info();
         this.increaseMaxSpeed = (newSpeed) => this.maxSpeed += newSpeed;
         console.log(this.increaseMaxSpeed(30));
         this.changeYear = (newValue) => this.year = newValue;
