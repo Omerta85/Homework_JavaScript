@@ -1,0 +1,102 @@
+
+.main {
+    margin: 0 auto;
+    width: 1320px;
+    display: grid;
+    grid-template-columns:repeat(2, 500px);
+    grid-gap: 10px;
+    padding: 10px 15px;
+
+}
+.main1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: calc(25% - 101px);
+    margin-right: calc(25% - 101px);
+    background: #20b5ea;
+    font-size: 40px;
+}
+
+.user_details{
+    width: 100%;
+    /*height: 600px;*/
+    /*border: 1px solid darkgray;*/
+    background: #dede2e;
+    display: flex;
+    flex-direction: column;
+}
+.user_details button, .user button, .post_details button {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    background: lawngreen;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.posts{
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post_title{
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-left: calc(10% - 100px);
+    margin-right: calc(10% - 100px);
+    background: #74e51c;
+}
+.post_title button{
+    display: block;
+    width: 40%;
+    margin: 5px auto;
+    background: #ae6c0b;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.post_details{
+    background: #ca1ac3;
+    margin: 10px;
+}
+.comments{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns:repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    grid-gap: 10px;
+    padding: 10px 15px;
+}
+.comment{
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+
+    width: 200px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-left: calc(10% - 100px);
+    margin-right: calc(10% - 100px);
+    background: #1db79b;
+}

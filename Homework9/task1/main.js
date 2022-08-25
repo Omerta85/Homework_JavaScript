@@ -49,3 +49,4 @@ for (let simpson of simpsons) {
     img.src = simpson.photo;
     memberDiv.appendChild(img);
 }
+

@@ -76,21 +76,27 @@ let coursesArray = [
 for (let coursesArrayElement of coursesArray) {
     let block = document.createElement('div');
     block.style.border = '2px solid red';
+
     let titleBlock = document.createElement('div');
     titleBlock.innerText = coursesArrayElement.title;
     titleBlock.style.border = '2px solid blue';
+
     let blockWrap = document.createElement('div');
     blockWrap.style.display = 'flex';
     blockWrap.style.columnGap = '15px';
+
     let monthBlock = document.createElement('div');
     monthBlock.innerText = coursesArrayElement.monthDuration;
     monthBlock.style.border = '2px solid blue';
+
     let hourBlock = document.createElement('div');
     hourBlock.innerText = coursesArrayElement.hourDuration;
     hourBlock.style.border = '2px solid blue';
     blockWrap.append(monthBlock,hourBlock);
+
     let modulesBlock = document.createElement('ul');
     modulesBlock.style.border = '2px solid blue';
+
     let modules = coursesArrayElement.modules;
     for (let module of modules) {
         let li = document.createElement('li');
@@ -101,3 +107,4 @@ for (let coursesArrayElement of coursesArray) {
     block.append(titleBlock, blockWrap, modulesBlock);
     document.body.append(block);
 }
+
